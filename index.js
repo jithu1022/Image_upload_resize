@@ -9,7 +9,7 @@ exports.handler = async (event,callback) =>{
     const Key = event.Key;
     const height = event.height;
     const width = event.width;
-    const longURL = `https://s3uploader-s3uploadbucket-13r60zwgt5hk7.s3.amazonaws.com/${Key}_resized.jpg`;
+    const longURL = `s3URL/${Key}_resized.jpg`;
 
     const params = {
         Bucket : BUCKET_NAME,
